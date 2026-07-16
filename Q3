@@ -1,0 +1,12 @@
+s=input()
+c=[]
+for i in range(len(s)):
+    c.append(s[i])
+
+count=0
+for i in range(len(c)):
+    if c[i] not in c[i+1:]:
+        count+=1
+    else:
+        count=0
+print(count)
